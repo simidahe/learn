@@ -28,11 +28,12 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
-        Intent intent = null;
         switch (view.getId()) {
             case R.id.btn_second:
-                intent = new Intent(this,MainActivity.class);
+                Intent intent = null;
+                intent = new Intent();
                 intent.putExtra(TCC,"I'm back");
+                intent.setClass(this,MainActivity.class);
                 startActivity(intent);
                 this.finish();
                 break;
