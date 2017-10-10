@@ -35,7 +35,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
                 intent.putExtra(TCC,"I'm back");
                 intent.setClass(this,MainActivity.class);
                 startActivity(intent);
-                this.finish();
+                //this.finish();
                 break;
 
         }
